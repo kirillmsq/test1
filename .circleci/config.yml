@@ -25,6 +25,7 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
       - image: 242369466814.dkr.ecr.us-east-2.amazonaws.com/jenkins-cicd:latest
+        <<: *aws_auth
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
